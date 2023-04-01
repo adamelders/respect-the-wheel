@@ -1,1 +1,18 @@
-<p>wheel-spinner works!</p>
+<ngx-wheel
+  #wheel
+  [width]="600"
+  [height]="600"
+  [spinDuration]="5"
+  [disableSpinOnClick]="false"
+  [items]="items"
+  [innerRadius]="50"
+  [spinAmount]="10"
+  [textOrientation]="textOrientation"
+  [textAlignment]="textAlignment"
+  pointerStrokeColor="black"
+  pointerFillColor="black"
+  [idToLandOn]="idToLandOn + 0"
+  (onSpinStart)="beforeSpin()"
+  (onSpinComplete)="afterSpin()"
+>
+</ngx-wheel>

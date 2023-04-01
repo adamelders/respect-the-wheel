@@ -1,0 +1,7 @@
+<div id="main">
+  <h1>Respect the Wheel!</h1>
+  <app-wheel-spinner [entries]="entries"></app-wheel-spinner>
+  <app-wheel-entries
+    (onEntriesUpdate)="onEntriesUpdate($event)"
+  ></app-wheel-entries>
+</div>

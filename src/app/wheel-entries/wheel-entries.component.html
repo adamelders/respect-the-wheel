@@ -1,0 +1,17 @@
+<nb-card size="small">
+  <nb-list>
+    <nb-list-item *ngFor="let user of users">
+      {{ user.name }}
+    </nb-list-item>
+  </nb-list>
+  <span>
+    <input
+      type="text"
+      nbInput
+      shape="semi-round"
+      placeholder="New entry"
+      [(ngModel)]="newUser"
+    />
+    <button (click)="onClick()" nbButton type="submit">Button</button>
+  </span>
+</nb-card>
